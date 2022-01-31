@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Scorpio750/vigilance#readme",
   "dependencies": {
+    "create-react-app": "^5.0.0",
     "react-scripts": "^5.0.0"
   }
 }
