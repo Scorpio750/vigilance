@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Scorpio750/vigilance/issues"
   },
-  "homepage": "https://github.com/Scorpio750/vigilance#readme"
+  "homepage": "https://github.com/Scorpio750/vigilance#readme",
+  "dependencies": {
+    "react-scripts": "^5.0.0"
+  }
 }
