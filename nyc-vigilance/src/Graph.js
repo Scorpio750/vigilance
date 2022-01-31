@@ -4,8 +4,6 @@ import { DATA_NYCHC } from './api/api'
 const Graph = props => {
   const [crimes, setCrimes] = useState([])
   useEffect(() => {
-    let cancelled = false
-
     ;(async function fetchCrimes() {
       // async work here
       try {
@@ -16,18 +14,11 @@ const Graph = props => {
       } catch (err) {
         console.error(err)
       }
-      if (cancelled) {
-        return
-      }
     })([crimes])
 
-    return () => {
-      cancelled = true
-    }
   }, [])
 
   const renderCrimes = crimeData => {
-    console.log({ crimeData })
     return crimeData.map(crime => {
       // trim extraneous info
       const tc = crime.slice(11)
@@ -40,7 +31,6 @@ const Graph = props => {
   }
 
   const renderFields = tc => {
-    console.log({ tc })
     return tc.map(field => (<td>{field}</td>))
   }
 
