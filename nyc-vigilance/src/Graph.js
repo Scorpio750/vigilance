@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { DATA_NYCHC } from './api/api'
+import { DATA_NYCHC } from './api/constants'
 
 const Graph = props => {
   const [crimes, setCrimes] = useState([])
